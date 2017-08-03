@@ -1,0 +1,68 @@
+body {
+    background-color: greenyellow;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+p {
+    display: inline;
+    margin-right: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: coral;
+}
+
+#submitForm {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#submit {
+    display: block;
+    margin: auto;
+}
+
+textarea {
+    height: 60px;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#orderedForm {
+    display: inline;
+}
+
+#ordered {
+    float: left;
+}
+
+ #devoured {
+    float: right;
+} 
+
+.left {
+    margin-left: 50px;
+}
+
+.right {
+    margin-right: 90px;
+}
+
+ #imgDiv {
+    text-align: center;
+} 
+
+img {
+    height: 150px;
+    width: 150px;
+}

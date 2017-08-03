@@ -1,0 +1,34 @@
+<h1>Eat-Da-Burger!</h1>
+<div id="imgDiv">
+  <img src="assets/img/burger_img.jpg">
+</div>
+  
+  <ul id="ordered">
+    {{#each burgers}}
+      {{#unless this.devoured}}
+        <li class="left">
+          <p>{{this.id}}. {{this.burger_name}}</p>
+
+          <form action="/{{this.id}}?_method=PUT" method="POST" id="orderedForm">
+            <input type="hidden" name="burger" value="false">
+            <button type="submit">Devour It!</button>
+          </form>
+        </li>
+      {{/unless}}
+    {{/each}}
+  </ul>
+
+  <ul id="devoured">
+    {{#each burgers}}
+      {{#if this.devoured}}
+        <li class="right">
+          {{this.id}}. {{this.burger_name}}
+        </li>
+      {{/if}}
+    {{/each}}
+  </ul>
+
+<form id="submitForm" action="/" method="POST">
+  <textarea type="text" name="burger_name"></textarea>
+  <button id="submit" type="submit">Submit</button>
+</form>

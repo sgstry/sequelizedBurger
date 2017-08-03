@@ -1,0 +1,34 @@
+{
+  "name": "sequelized-burger",
+  "version": "1.0.0",
+  "description": "Sequelized burger app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgstry/sequelizedBurger.git"
+  },
+  "keywords": [
+    "node",
+    "sequelize",
+    "mvc",
+    "express"
+  ],
+  "author": "Steven Strybos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgstry/sequelizedBurger/issues"
+  },
+  "homepage": "https://github.com/sgstry/sequelizedBurger#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.9",
+    "mysql2": "^1.3.6",
+    "sequelize": "^4.4.2"
+  }
+}
